@@ -1,0 +1,63 @@
+---
+title: "Grundlagen Generative Sprachmodelle und ihr Einsatz "
+format: revealjs
+date: 04/15/2025
+author: Jonas Stettner | CorrelAid @ CDL
+theme: cdl_assets/cdl.scss
+logo: cdl_assets/logo.png
+footer: "civic-data.de"
+bibliography: references.bib
+csl: cdl_assets/apa.csl
+---
+
+## KI Begriff: Intelligenz 🤖 
+
+> "[I]ntelligent” according to what definition? The three-stratum definition? Howard Gardner’s theory of multiple intelligences? The Stanford-Binet Intelligence Scale? Bender remains particularly fond of an alternative name for AI proposed by a former member of the Italian Parliament: “Systematic Approaches to Learning Algorithms and Machine Inferences.” Then people would be out here asking, “Is this SALAMI intelligent? Can this SALAMI write a novel? Does this SALAMI deserve human rights? [@weil_chatgpt_2023]
+
+## KI Begriff: Definiton 
+
+> Systeme der Künstlichen Intelligenz sind in der Lage, Daten und Informationen auf eine Weise zu verarbeiten, die menschlichen Denkprozessen ähnelt oder diese nachzuahmen scheint. Dies beinhaltet Aspekte des Denkens und Lernens, der Wahrnehmung, Vorhersage, Planung oder Steuerung [@deutsche_unesco-kommission_zusammenfassung_2023, S. 8]
+
+## Einordnung 
+
+![](images/drawing.png){fig-align="center"}
+
+
+## Neuronale Netzwerke 
+
+![Glosser.ca, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons](images/Colored_neural_network.png){fig-align="center"}
+
+
+## Sprachmodelle 
+
+- Ein Modell, dass die Wahrscheinlichkeiten der möglichen nächsten Wörter ausgibt [@jurafsky_speech_2025]
+
+#### Training
+
+![Source: Holistic AI, <https://www.holisticai.com/blog/from-transformer-architecture-to-prompt-engineering>](images/lmodeling.png){fig-align="center"}
+
+## Große Sprachmodelle
+
+
+
+## Stochastic Parrots 🦜
+
+
+
+## RAG
+
+## RAG: Quellenangabe
+
+- Quellenangabe ist regulärer Teil des Outputs des LLMs
+- LLM bekommt neben des Ergebnissen des Suchschritts auch Meta-Informationen, wie z.B. Seitenzahlen
+- Ausgabe wird formatiert, sodass Quellenangaben z.B. als hochgestellte Zahl erscheinen
+
+
+## Agents
+
+## Informationszuganssysteme
+
+## Literaturverzeichnis
+
+::: {#refs}
+:::

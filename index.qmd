@@ -8,6 +8,7 @@ logo: cdl_assets/logo.png
 footer: "civic-data.de"
 bibliography: references.bib
 csl: cdl_assets/apa.csl
+self-contained: true
 ---
 
 ## KI Begriff: Intelligenz 🤖 

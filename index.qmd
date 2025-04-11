@@ -8,7 +8,7 @@ logo: cdl_assets/logo.png
 footer: "civic-data.de"
 bibliography: references.bib
 csl: cdl_assets/apa.csl
-self-contained: true
+self-contained: true    
 ---
 
 ## KI Begriff: Intelligenz 🤖 
@@ -21,25 +21,43 @@ self-contained: true
 
 ## Einordnung 
 
-![](images/drawing.png){fig-align="center"}
+![](images/drawing.png){fig-## Neuronale Netzwerke align="center"}
 
 
-## Neuronale Netzwerke 
+## Neuronale Netzwerke
+
+- Model biologischer Neuronen, basierend auf dem, was damals über neuronale Aktivität bekannt war [@mcculloch_logical_1943]
+- Neruonen sind Recheneinheiten, die in Schichten miteinander verbunden sind, welche die Architektur des Netzwerks definieren
+- Das Lernen des Netzwerks wird oft durch sog, Backpropagation geleitet, das die Gewichte anpasst, um den Vorhersagefehler zu minimieren.
+
+## Neuronale Netzwerke: Schaubild
 
 ![Glosser.ca, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons](images/Colored_neural_network.png){fig-align="center"}
-
 
 ## Sprachmodelle 
 
 - Ein Modell, dass die Wahrscheinlichkeiten der möglichen nächsten Wörter ausgibt [@jurafsky_speech_2025]
+- ELIZA (1967) als Beispiel für einen Chatbot mit symbolischer KI (kein Sprachmodell) 
 
-#### Training
+## Training neuronaler Sprachmodelle
 
 ![Source: Holistic AI, <https://www.holisticai.com/blog/from-transformer-architecture-to-prompt-engineering>](images/lmodeling.png){fig-align="center"}
 
-## Große Sprachmodelle
+- "Transformer" sind eine Architektur neuronaler Netzwerke, die Tokens innerhalb des Inputs kontextualisieren, indem sie deren Beziehungen zueinander berücksichtigen
+- GPT = Generative Pretrained Transformer
 
+## "Große" Sprachmodelle
 
+- BERT (340 million Parameter) vs GPT-4 (1.8 Billionen Parameter) 
+- AI-Scaling-Gesetze: Größere Modelle profitieren von mehr Daten und Rechenleistung (GPU), jedoch mit abnehmendem Grenznutzen.
+- Neues LLama 4 "Behemoth" (2 Billionen Parameter) zeigt nicht erwartete Performance
+- Entstehender Konsens, dass Performance durch andere Methoden erhöht werden muss (z.B. Reasoning)
+
+## Basis-Modelle
+
+!["Das Ökosystem der KI-Basismodelle", reframe\[Tech\], Namensnennung-Share Alike 4.0 International, <https://www.reframetech.de/wissensseite-basismodelle/>](images/Oekosystem_Basismodelle.png){fig-align="center"}
+
+- Open vs. proprietär 
 
 ## Stochastic Parrots 🦜
 

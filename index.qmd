@@ -155,7 +155,7 @@ self-contained: true
 - LLM bekommt neben des Ergebnissen des Suchschritts auch Meta-Informationen, wie z.B. Seitenzahlen
 - Ausgabe wird formatiert, sodass Quellenangaben z.B. als hochgestellte Zahl erscheinen
 
-## Agents
+## LLMs als Agenten
 
 ![@sypherd_practical_2024, Figure 2](images/agents.png){fig-align="center"}
 
@@ -164,22 +164,21 @@ self-contained: true
 - Beispiel für das Abrufen von Tools:
 
     ```
-    [{'name': 'multiply',
-    'args': {'a': 3, 'b': 12},
-    'id': 'call_UL7E2232GfDHIQGOM4gJfEDD'},
     {'name': 'add',
     'args': {'a': 11, 'b': 49},
-    'id': 'call_VKw8t5tpAuzvbHgdAXe9mjUx'}]
+    'id': 'call_VKw8t5tpAuzvbHgdAXe9mjUx'},
+    [{'name': 'websearch',
+    'args': {'query': 'bürgermeisterin von wesel', 'region': 'germany'},
+    'id': 'call_UL7E2232GfDHIQGOM4gJfEDD'},]
     ```
 - Statischer Code prüft LLM-Output auf solche Outputs und führt Tool-Code aus
 
 ## "Agentic" Chatbots
 
 - Websuche als Tool für LLM-basierte Chatbots wie ChatGPT
-- Ausführung von Tools geschieht im Hintergrund
-- Chatbots als modulare Systeme (Beispiel Lupai)
-    - Spezialisierte Modelle als Module
-    - Festgelegte Logik vs. gewisser Grad an Autonomität
+- Chatbots als modulare Systeme (Beispiel Migrationsberatung mit Lupai)
+    - Spezialisierte Modelle als Module 
+    - Festgelegte Logik vs. Steuerung durch LLM
     - Language Detection als fester erster Schritt vs. Entscheidung ob Rückfrage gestellt wird
 
 ## Literaturverzeichnis

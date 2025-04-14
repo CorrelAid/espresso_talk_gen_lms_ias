@@ -1,7 +1,6 @@
 ## Content
 
-- Pretrained
-    - Foundation Models
+
 
 - Stochastic Parrots
     - LMMs dont understand d

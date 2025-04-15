@@ -143,11 +143,10 @@ self-contained: true
 
 ## Semantische Suche mit Embeddings
 
-- Embedding = Repräsentation von Spracheinheiten (z.B.) in Vektorraum
-    - Ähnliche Wörter liegen nah beieinaner 
-- Embedding-Modelle sind LLMs, die für den Einsatz von Embeddings finetuned werden [@gunther_jina_2023]
-- Text-Embedding: Durchschnitt der Token Embeddings im vorherigen Layer resultiert in einem Vektor
-- Semantische Suche geschieht über Distanz zwischen Vektoren in Query und in Datenbank
+- Embedding = Repräsentation von Sprache z.B. Wörtern in Vektorraum
+    - Embedding-Modelle sind LLMs, die z.B. für Suche gefinetuned werden [@gunther_jina_2023]
+    - Text-Embedding: Durchschnitt der Token Embeddings im vorherigen Layer resultiert in einem Vektor
+- Semantische Suche geschieht über Distanz zwischen Vektoren 
 
 ## RAG: Quellenangabe
 

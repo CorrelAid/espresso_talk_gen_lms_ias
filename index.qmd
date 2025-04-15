@@ -111,7 +111,7 @@ self-contained: true
 ## LLM Sprachverständnis Ⅱ
 
 - Bedeutung entsteht durch Syntax und einer Referenz zu etwas außerhalb der Sprache [@bender_climbing_2020] 
-    - LLMs "verstehen" Bedeutung nicht, Output an sich hat keine Bedeutung (Stochastic Parrots)
+    - LLMs "verstehen" Bedeutung nicht, Output an sich hat keine Bedeutung (Stochastic Parrots 🦜)
     - Wir interpretieren Output von LLMs nur so, als ob sie Bedeutung vermitteln [@bender_dangers_2021]
 
 > Models make words, but people make meaning. [@klein_provocations_2025]
@@ -121,6 +121,8 @@ self-contained: true
 - Wiedersprechende Theorie: Bedeutung ergibt sich aus der Art und Weise, wie sich Sprache aufeinander bezieht -> LLMs verstehen Bedeutung [@mitchell_debate_2023; @manning_human_2022]
 - Wie passen multimodale Modelle in diese Debatte?
 - Alignment-Phase als soziales Lernen?
+
+# Fragen zu den KI-Grundlagen?
 
 ## Einsatz von LLMs in Informationszugangssystemen
 
@@ -179,6 +181,8 @@ self-contained: true
     - Spezialisierte Modelle als Module 
     - Festgelegte Logik vs. Steuerung durch LLM
     - Language Detection als fester erster Schritt vs. Entscheidung ob Rückfrage gestellt wird
+
+# Fragen zu dem Einsatz von KI in Informationszugangssystemen?
 
 ## Literaturverzeichnis
 

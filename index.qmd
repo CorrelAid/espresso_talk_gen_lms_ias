@@ -20,11 +20,11 @@ self-contained: true
 5. Informationszugangssysteme mit LLMs
 
 
-## KI Begriff: Definiton 🤖 
+## KI Begriff: Definition 🤖 
 
 > Systeme der Künstlichen Intelligenz sind in der Lage, Daten und Informationen auf eine Weise zu verarbeiten, die menschlichen Denkprozessen ähnelt oder diese nachzuahmen scheint. Dies beinhaltet Aspekte des Denkens und Lernens, der Wahrnehmung, Vorhersage, Planung oder Steuerung [@deutsche_unesco-kommission_zusammenfassung_2023, S. 8]
 
-- Ähnlichkeit bei Zielen und Herstellung und Funktionsweise von Intelligenz als auf ein Ziel gerichtete Fähigkeit, die unterschiedliche Komponenten umfasst (z.B. Logik, Kreativität, Erkennen von Objekten)
+- Ähnlichkeit bei Zielen, Herstellung und Funktionsweise von Intelligenz als auf ein Ziel gerichtete Fähigkeit, die unterschiedliche Komponenten umfasst
 
 ## Einordnung 
 

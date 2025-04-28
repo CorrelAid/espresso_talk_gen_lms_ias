@@ -1,7 +1,7 @@
 ---
-title: "Grundlagen Generative Sprachmodelle und ihr Einsatz "
+title: "Generative Sprachmodelle und Informationszugangssysteme"
 format: revealjs
-date: 04/15/2025
+date: 04/29/2025
 author: Jonas Stettner | CorrelAid @ CDL
 theme: cdl_assets/cdl.scss
 logo: cdl_assets/logo.png
@@ -13,168 +13,58 @@ self-contained: true
 
 ## Gliederung
 
-1. Grundlagen KI und LLMs
-2. Einsatz in Informationszugangssystemen
-
-## Grundlagen KI und LLMs: Gliederung
-
 1. Was ist KI?
-2. Neuronale Netzwerke
+2. Einordnung
 3. Neuronale Sprachmodelle
-4. "Große" Sprachmodelle
-5. LLM Sprachverständnis
+4. Informationszugangssysteme
+5. Informationszugangssysteme mit LLMs
 
-## KI Begriff: Intelligenz Ⅰ 🤖 
 
-> "[I]ntelligent” according to what definition? The three-stratum definition? Howard Gardner’s theory of multiple intelligences? [...] [A]n alternative name for AI proposed by a former member of the Italian Parliament: “Systematic Approaches to Learning Algorithms and Machine Inferences.” Then people would be out here asking, “Is this SALAMI intelligent? Can this SALAMI write a novel? Does this SALAMI deserve human rights? [@weil_chatgpt_2023]
-
-- "Intelligent" als Wertung 
-
-## KI Begriff: Intelligenz Ⅱ
-
-> Intelligence is the **computational part** of the ability to achieve goals in the world. [...] Intelligence involves mechanisms, and AI research has discovered how to make computers carry out some of them and not others. Such programs should be considered "somewhat intelligent". [@mccarthy_what_2012]
-
-- Intelligenz als auf ein Ziel gerichtete Fähigkeit, die unterschiedliche Komponenten umfasst (z.B. Logik, Kreativität, Erkennen von Objekten)
-
-## KI Begriff: Definiton 
+## KI Begriff: Definiton 🤖 
 
 > Systeme der Künstlichen Intelligenz sind in der Lage, Daten und Informationen auf eine Weise zu verarbeiten, die menschlichen Denkprozessen ähnelt oder diese nachzuahmen scheint. Dies beinhaltet Aspekte des Denkens und Lernens, der Wahrnehmung, Vorhersage, Planung oder Steuerung [@deutsche_unesco-kommission_zusammenfassung_2023, S. 8]
 
-- Ähnlichkeit bei Zielen und Herstellung und Funktionsweise von Intelligenz
-
-## KI Tasks 
-
-- KI-Methoden werden für Tasks entwickelt und mit für diese gemachten Daten und Metriken evaluiert und verglichen
-- Beispiele Tasks: Klassifikation, Textzusammenfassung, Nutzung von Tools
+- Ähnlichkeit bei Zielen und Herstellung und Funktionsweise von Intelligenz als auf ein Ziel gerichtete Fähigkeit, die unterschiedliche Komponenten umfasst (z.B. Logik, Kreativität, Erkennen von Objekten)
 
 ## Einordnung 
 
 ![](images/drawing.png){fig-align="center"}
 
-## Neuronale Netzwerke Ⅰ
 
-- Modell biologischer Neuronen (basierend auf dem, was damals über Neuronen bekannt war)[@mcculloch_logical_1943]
-
-![Illustration eines neuronalen Netzwerks aus Hilary Masons Keynote, <https://www.youtube.com/watch?v=SxxqaC5hf04&t=2394s>](images/artificial-neural-network-cell.png){fig-align="center"}
-
-## Neuronale Netzwerke Ⅱ
-- Neuronen sind Recheneinheiten, die in Schichten auf verschiedene Arten miteinander verbunden sind
+## Neuronale Sprachmodelle
 
 ![Glosser.ca, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons](images/Colored_neural_network.png){fig-align="center"}
 
-- Deep Learning: Mehr als ein Hidden Layer
-- Rechnungen innerhalb des Netzwerks lassen sich effizient auf Grafikkarten ausführen
-
-## Neuronale Netzwerke Ⅲ
-
-- Lernen beim Training durch Backpropagation: 
-    - "Forward Pass" resultiert in Output, der mit "Ground Truth" verglichen wird
-    - "Backward Pass" mit Korrektur der Parameter (Weights und Biases) basierend auf dem Fehlerwert 
-- Neuronale Netzwerke erzielen beste Performance bei vielen Tasks, bzw. erst Ermöglichung mancher Tasks
-
-## Sprachmodelle: Definition
-
 - Sprachmodell: Ein Modell, dass die Wahrscheinlichkeiten der möglichen nächsten Wörter ausgibt [@jurafsky_speech_2025]
-- ELIZA (1967) als Beispiel für einen Chatbot mit symbolischer KI (kein Sprachmodell) 
 
-## Neuronale Sprachmodelle: Training
 
-![Quelle: Holistic AI, <https://www.holisticai.com/blog/from-transformer-architecture-to-prompt-engineering>](images/lmodeling.png){fig-align="center"}
-
-- Vorhersage der Wahrscheinlichkeit eines Tokens in Abhängigkeit von seinem vorangehenden oder umgebenden Kontext
-- Transformer Netzwerkarchitektur: Tokens innerhalb des Inputs kontextualisieren (Multi-Head Attention)
-
-## "Große" Sprachmodelle (LLMs) Ⅰ
+## "Große" neuronale Sprachmodelle (LLMs)  
 
 - BERT -> Bidirectional encoder representations from transformers (340 Millionen Parameter) 
     - Finetuning: Anpassung des Modells und Parameter auf Task 
-- GPT-4 -> Generative Pre-trained Transformer (geschätzt, nicht offiziell bestätigt 1.8 Billionen Parameter) 
-    - In-Context Learning (ICL) und (Few Shot) Prompting -> Keine Veränderung der Parameter
+- GPT-4 -> **Generative** Pre-trained Transformer (geschätzt, nicht offiziell bestätigt 1.8 Billionen Parameter) 
+    - In-Context Learning (ICL) und (Few Shot) Prompting 
 
-## "Große" Sprachmodelle (LLMs) Ⅱ
-
-- Offene (nicht Open Source) vs Proprietäre Modelle
-- Hugging Face 🤗 als zentraler Ort für offene Modelle
-
-## "Große" Sprachmodelle (LLMs) Ⅲ
-- LLama 4 "Behemoth" (2 Billionen Parameter) zeigt nicht erwartete Performance [@edwards_metas_2025]
-- AI-Scaling-Gesetze: Bessere Modelle profitieren von mehr Daten und Rechenleistung (GPU), jedoch mit abnehmendem Grenznutzen. [@owen_how_2024]
-- Entstehender Konsens, dass Performance durch andere Methoden erhöht werden muss (z.B. "Reasoning") [@zeff_current_2024]
-
-## LLM Sprachverständnis Ⅰ
-
-- LLMs bestehen Turing Test [@assaad_chatgpt_2025]
-- Chinese Room: Befolgung syntaktischer Regeln ohne semantisches Verständnis (Form vs. Bedeutung)
-
-![Quelle: Keno Leon, <https://k3no.medium.com/the-chinese-room-experiment-2c0d63848f05>](images/chinese_room.webp){fig-align="center"}
-
-## LLM Sprachverständnis Ⅱ
-
-- Bedeutung entsteht durch Syntax und einer Referenz zu etwas außerhalb der Sprache [@bender_climbing_2020] 
-    - LLMs "verstehen" Bedeutung nicht, Output an sich hat keine Bedeutung (Stochastic Parrots 🦜)
-    - Wir interpretieren Output von LLMs nur so, als ob sie Bedeutung vermitteln [@bender_dangers_2021]
-
-> Models make words, but people make meaning. [@klein_provocations_2025]
-
-## LLM Sprachverständnis Ⅲ
-
-- Wiedersprechende Theorie: Bedeutung ergibt sich aus der Art und Weise, wie sich Sprache aufeinander bezieht -> LLMs verstehen Bedeutung [@mitchell_debate_2023; @manning_human_2022]
-- Wie passen multimodale Modelle in diese Debatte?
-- Alignment-Phase als soziales Lernen?
-
-# Fragen zu den KI-Grundlagen?
-
-## Einsatz von LLMs in Informationszugangssystemen
-
-1. Definition Informationszuganssysteme
-2. Informationszugangssystem mit RAG
-3. Semantische Suche mit Embeddings
-4. Quellenangabe in RAG
-5. Tools
-
-## Informationszugangssysteme
-
+## Informationszugangssysteme: Enge Definition 
 > [Information Access] refers to a focused interaction between a person and information where relevant information is sought, found, and used—with or without a system. [@shah_envisioning_2024]
 
 - Umfasst Informationsbeschaffung und Informationsfilterung
 - Beispiele: Bibliothek, Google, ChatGPT 
 
-## Informationszugangssystem mit RAG
+## IZS: Erweiterte Defintion
+- Wofür werden LLMs eingesetzt? Was ist der primäre Zweck des Systems?
+- **A: Aktives Informationsverhalten** (Informieren/Bilden)
+    -> Wille zur Information
+    - **A2: Indiviualisierte Informationsvermittlung** (Beratung)
+- **C: Proaktive Informationsverbreitung** (Advocacy)
+    -> Informationen an die Person bringen
+
+## Retrieval Augmented Generation (RAG)
 
 ![Turtlecrown, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons](images/RAG_diagram.png){fig-align="center"}
+ 
 
-## Semantische Suche mit Embeddings
-
-- Embedding = Repräsentation von Sprache z.B. Wörtern in Vektorraum
-    - Embedding-Modelle sind LLMs, die z.B. für Suche gefinetuned werden [@gunther_jina_2023]
-    - Text-Embedding: Durchschnitt der Token Embeddings im vorherigen Layer resultiert in einem Vektor
-- Semantische Suche geschieht über Distanz zwischen Vektoren 
-
-## RAG: Quellenangabe
-
-- Quellenangabe ist regulärer Teil des Outputs des LLMs
-- LLM bekommt neben des Ergebnissen des Suchschritts auch Meta-Informationen, wie z.B. Seitenzahlen
-- Ausgabe wird formatiert, sodass Quellenangaben z.B. als hochgestellte Zahl erscheinen
-
-## LLMs als Agenten
-
-![@sypherd_practical_2024, Figure 2](images/agents.png){fig-align="center"}
-
-## Tools
-
-- Beispiel für das Abrufen von Tools:
-
-    ```
-    {'name': 'add',
-    'args': {'a': 11, 'b': 49},
-    'id': 'call_VKw8t5tpAuzvbHgdAXe9mjUx'},
-    [{'name': 'websearch',
-    'args': {'query': 'bürgermeisterin von wesel', 'region': 'germany'},
-    'id': 'call_UL7E2232GfDHIQGOM4gJfEDD'},]
-    ```
-- Statischer Code prüft LLM-Output auf solche Outputs und führt Tool-Code aus
-
-## "Agentic" Chatbots
+## "Agentic" Systeme 
 
 - Websuche als Tool für LLM-basierte Chatbots wie ChatGPT
 - Chatbots als modulare Systeme (Beispiel Migrationsberatung mit Lupai)
@@ -182,7 +72,7 @@ self-contained: true
     - Festgelegte Logik vs. Steuerung durch LLM
     - Language Detection als fester erster Schritt vs. Entscheidung ob Rückfrage gestellt wird
 
-# Fragen zu dem Einsatz von KI in Informationszugangssystemen?
+# Fragen?
 
 ## Literaturverzeichnis
 

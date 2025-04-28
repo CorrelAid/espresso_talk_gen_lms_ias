@@ -24,7 +24,7 @@ self-contained: true
 
 > Systeme der Künstlichen Intelligenz sind in der Lage, Daten und Informationen auf eine Weise zu verarbeiten, die menschlichen Denkprozessen ähnelt oder diese nachzuahmen scheint. Dies beinhaltet Aspekte des Denkens und Lernens, der Wahrnehmung, Vorhersage, Planung oder Steuerung [@deutsche_unesco-kommission_zusammenfassung_2023, S. 8]
 
-- Ähnlichkeit bei Zielen, Herstellung und Funktionsweise von Intelligenz als auf ein Ziel gerichtete Fähigkeit, die unterschiedliche Komponenten umfasst
+- Ähnlichkeit bei Zielen, Herstellung und Funktionsweise von Intelligenz als auf ein Ziel gerichtete Fähigkeit
 
 ## Einordnung 
 

@@ -37,13 +37,11 @@ self-contained: true
 
 - Sprachmodell: Ein Modell, dass die Wahrscheinlichkeiten der möglichen nächsten Wörter ausgibt [@jurafsky_speech_2025]
 
-
 ## "Große" neuronale Sprachmodelle (LLMs)  
 
 - BERT -> Bidirectional encoder representations from transformers (340 Millionen Parameter) 
-    - Finetuning: Anpassung des Modells und Parameter auf Task 
 - GPT-4 -> **Generative** Pre-trained Transformer (geschätzt, nicht offiziell bestätigt 1.8 Billionen Parameter) 
-    - In-Context Learning (ICL) und (Few Shot) Prompting 
+    - In-Context Learning (ICL) 
 
 ## Informationszugangssysteme: Enge Definition 
 > [Information Access] refers to a focused interaction between a person and information where relevant information is sought, found, and used—with or without a system. [@shah_envisioning_2024]
@@ -51,7 +49,7 @@ self-contained: true
 - Umfasst Informationsbeschaffung und Informationsfilterung
 - Beispiele: Bibliothek, Google, ChatGPT 
 
-## IZS: Erweiterte Defintion
+## IZS: Erweiterte Definition
 - Wofür werden LLMs eingesetzt? Was ist der primäre Zweck des Systems?
 - **A: Aktives Informationsverhalten** (Informieren/Bilden)
     -> Wille zur Information
@@ -63,7 +61,6 @@ self-contained: true
 
 ![Turtlecrown, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons](images/RAG_diagram.png){fig-align="center"}
  
-
 ## "Agentic" Systeme 
 
 - Websuche als Tool für LLM-basierte Chatbots wie ChatGPT

@@ -1,0 +1,77 @@
+---
+title: "Generative Sprachmodelle und Informationszugangssysteme"
+format: revealjs
+date: 04/29/2025
+author: Jonas Stettner | CorrelAid @ CDL
+theme: cdl_assets/cdl.scss
+logo: cdl_assets/logo.png
+footer: "civic-data.de"
+bibliography: references.bib
+csl: cdl_assets/apa.csl
+self-contained: true    
+---
+
+## Gliederung
+
+1. Was ist KI?
+2. Einordnung
+3. Neuronale Sprachmodelle
+4. Informationszugangssysteme
+5. Informationszugangssysteme mit LLMs
+
+
+## KI Begriff: Definition 🤖 
+
+> Systeme der Künstlichen Intelligenz sind in der Lage, Daten und Informationen auf eine Weise zu verarbeiten, die menschlichen Denkprozessen ähnelt oder diese nachzuahmen scheint. Dies beinhaltet Aspekte des Denkens und Lernens, der Wahrnehmung, Vorhersage, Planung oder Steuerung [@deutsche_unesco-kommission_zusammenfassung_2023, S. 8]
+
+- Ähnlichkeit bei Zielen, Herstellung und Funktionsweise von Intelligenz als auf ein Ziel gerichtete Fähigkeit
+
+## Einordnung 
+
+![](images/drawing.png){fig-align="center"}
+
+
+## Neuronale Sprachmodelle
+
+![Glosser.ca, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons](images/Colored_neural_network.png){fig-align="center"}
+
+- Sprachmodell: Ein Modell, dass die Wahrscheinlichkeiten der möglichen nächsten Wörter ausgibt [@jurafsky_speech_2025]
+
+## "Große" neuronale Sprachmodelle (LLMs)  
+
+- BERT -> Bidirectional encoder representations from transformers (340 Millionen Parameter) 
+- GPT-4 -> **Generative** Pre-trained Transformer (geschätzt, nicht offiziell bestätigt 1.8 Billionen Parameter) 
+    - In-Context Learning (ICL) 
+
+## Informationszugangssysteme: Enge Definition 
+> [Information Access] refers to a focused interaction between a person and information where relevant information is sought, found, and used—with or without a system. [@shah_envisioning_2024]
+
+- Umfasst Informationsbeschaffung und Informationsfilterung
+- Beispiele: Bibliothek, Google, ChatGPT 
+
+## IZS: Erweiterte Definition
+- Wofür werden LLMs eingesetzt? Was ist der primäre Zweck des Systems?
+- **A: Aktives Informationsverhalten** (Informieren/Bilden)
+    -> Wille zur Information
+    - **A2: Indiviualisierte Informationsvermittlung** (Beratung)
+- **C: Proaktive Informationsverbreitung** (Advocacy)
+    -> Informationen an die Person bringen
+
+## Retrieval Augmented Generation (RAG)
+
+![Turtlecrown, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons](images/RAG_diagram.png){fig-align="center"}
+ 
+## "Agentic" Systeme 
+
+- Websuche als Tool für LLM-basierte Chatbots wie ChatGPT
+- Chatbots als modulare Systeme (Beispiel Migrationsberatung mit Lupai)
+    - Spezialisierte Modelle als Module 
+    - Festgelegte Logik vs. Steuerung durch LLM
+    - Language Detection als fester erster Schritt vs. Entscheidung ob Rückfrage gestellt wird
+
+# Fragen?
+
+## Literaturverzeichnis
+
+::: {#refs}
+:::
